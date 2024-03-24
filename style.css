@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #333;
+  }
+  
+  .weather-container{
+    width: 520px;
+    height: 100px;
+    margin: 100px auto;
+    background: linear-gradient(to bottom, #abaed3, #8997d2, #948ff8);
+    border-radius: 35px;
+    box-shadow: 0 0 10px #ffffff75;
+    padding: 20px;
+    text-align: center;
+    transition: height .5s ease;
+  }
+  
+  .search{
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  .search input{
+    width: 90%;
+    padding: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .search input::placeholder{
+    color: #999;
+    
+  }
+  
+  .search button{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+    color: #00000039;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+  }
+  
+  .city-name{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px auto;
+    color: #333;
+  }
+
+  
+  .weather-img img{
+    width: 110px;
+  }
+  
+  .details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .details-bg{
+    background: rgba(36, 20, 44, 0.216);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .detail-title{
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .detail-num{
+    margin-left: 8px;
+    color: #fff;
+  }
+  
+  .degrees{
+    position: relative;
+    font-size: 60px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 7px;
+  }
+
+  .degrees span,
+  .details-num span
+  {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 2px;
+  }
+  
+  .min-max{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: #333;
+
+  }
+
+  .min{
+    margin-right: 18px;
+  }
+
+  .weather-info, .details, .not-found{
+    visibility: hidden;
+  }
+  .weather-info.visiblity, .details.visiblity, .not-found.visiblity{
+    visibility: visible;
+  }
+
+  .not-found{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+  }
+
+  .not-found img{
+    width: 450px;
+  }
+
+  .not-found p{
+    font-size: 22px;
+    margin-top: 12px;
+  }
